@@ -23,4 +23,4 @@ function counterText() {
 
 button.addEventListener('click', alertSubmit);
 infoCheckbox.addEventListener('click', enableButton);
-textArea.addEventListener('keypress', counterText);
+textArea.addEventListener('keyup', counterText);
