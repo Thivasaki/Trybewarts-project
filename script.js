@@ -18,7 +18,7 @@ function enableButton() {
 }
 
 function counterText() {
-  counter.innerText = (500 - textArea.value.length);  
+  counter.innerText = (500 - textArea.value.length);
 }
 
 button.addEventListener('click', alertSubmit);
