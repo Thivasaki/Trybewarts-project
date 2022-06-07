@@ -25,7 +25,7 @@ main {
   height: 500px;
 }
 
-#family {
+.family {
   display: flex;
   flex-direction: column;
 }
