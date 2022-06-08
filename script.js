@@ -35,23 +35,50 @@ function createForm(event) {
   let inputLastName = document.getElementById('input-lastname').value;
   let inputEmail = document.getElementById('input-email').value;
   let inputHouse = document.getElementById('house').value;
-  let InputFamilyFront = document.getElementById('family-front');
-  let InputFamilyBack = document.getElementById('family-back');
-  let InputFamilyFull = document.getElementById('family-full');
-  if (InputFamilyFront.checked === true){
-    let inputFamily = InputFamilyFront.value;
-  } else if (InputFamilyBack.checked === true){
-    let inputFamily = InputFamilyBack.value;
-  }else if (InputFamilyFull.checked === true){
-    let inputFamily = InputFamilyFull.value;
+  let inputFamilyFront = document.getElementById('family-front');
+  let inputFamilyBack = document.getElementById('family-back');
+  let inputFamilyFull = document.getElementById('family-full');
+  let inputFamily = '';
+  let classDad = document.getElementsByClassName('subject');
+  let inputClass = '';
+  let inputRateDad = document.getElementsByClassName('rate');
+  let inputRate = '';
+  let inputComments = textArea.value;
+   
+  if (inputFamilyFront.checked) {
+   inputFamily = inputFamilyFront.value;    
+  } else if (inputFamilyBack.checked) {
+    inputFamily = inputFamilyBack.value;    
+  } else if (inputFamilyFull.checked) {
+    inputFamily = inputFamilyFull.value;    
   }
+
+  for (let aux = 0; aux < classDad.length; aux += 1) {
+    if (inputClass === ''){
+      if (classDad[aux].checked) {
+        inputClass += classDad[aux].value;
+      } 
+    }
+      else {
+        if (classDad[aux].checked) {
+          inputClass += (', ' + classDad[aux].value);
+        } 
+  }
+}
+for (let aux2 = 0; aux2 < inputRateDad.length; aux2 += 1) {
+
+  if (inputRateDad[aux2].checked) {
+    inputRate = inputRateDad[aux2].value;
+  }
+}
+
   let newName = 'Nome: ' + inputName + ' ' + inputLastName;
   let newEmail = 'Email: ' + inputEmail;
   let newHouse = 'Casa: ' + inputHouse;
   let newFamily = 'Família: ' + inputFamily;
-  let newClass = 'Matérias: Matérias, Marcadas, Aqui';
-  let newRate = 'Avaliação: NotaAqui';
-  let newComments = 'Observações: Observações aqui';
+  let newClass = 'Matérias: ' + inputClass;
+  let newRate = 'Avaliação: ' + inputRate;
+  let newComments = 'Observações: ' + inputComments;
   let newForm = document.createElement('form');
   newForm.id = 'form-data';
   cleanUpForm();
@@ -86,7 +113,7 @@ function createForm(event) {
   newForm.appendChild(newLabelRate);
 
   
-  let newLabelComments = document.createElement('label');
+  const newLabelComments = document.createElement('label');
   newLabelComments.innerText = newComments;
   newForm.appendChild(newLabelComments);
 
