@@ -14,18 +14,25 @@
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
-main {
+main, img {
   display: flex;
+  justify-content: end;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.family {
+#family , #class {
   display: flex;
+  flex-direction: column;
+}
+
+#form-data {
+  display: flex;
+  order: -1;
   flex-direction: column;
 }
