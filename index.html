@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
@@ -17,81 +18,89 @@
       <button id="btn-submit" >Entrar</button>
     </form>    
   </header>
+
   <main>
-    <form id="evaluation-form" class="remove" action="">
-      <div class="remove">
-        <input id="input-name" class="remove" type="text" name="nome" placeholder="Nome">
-        <input id="input-lastname" class="remove" type="text" name="sobrenome" placeholder="Sobrenome">
+    <form id="evaluation-form"  action="">
+      <div >
+        <input id="input-name"  type="text" name="nome" placeholder="Nome">
+        <input id="input-lastname"  type="text" name="sobrenome" placeholder="Sobrenome">
       </div>
-      <div class="remove">
-        <input id="input-email" class="remove" type="email" name="email" placeholder="Email">
-        <select name="" id="house" class="remove">
-        <option id="gitnoria-house" class="remove" value="Gitnória">Gitnória</option>   
-        <option id="reactpuff-house" class="remove" value="Reactpuff">Reactpuff</option>
-        <option id="corvinode-house" class="remove" value="Corvinode">Corvinode</option>
-        <option id="pytherina-house" class="remove" value="Pytherina">Pytherina</option>
+      <div >
+        <input id="input-email"  type="email" name="email" placeholder="Email">
+        <select name="" id="house" >
+          <option id="gitnoria-house"  value="Gitnória">Gitnória</option>   
+          <option id="reactpuff-house"  value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house"  value="Corvinode">Corvinode</option>
+          <option id="pytherina-house"  value="Pytherina">Pytherina</option>
         </select>
       </div>  
-      <div id="family" class="remove">
-        <label id="label-family" class="remove" for="">Qual sua família?</label>
-        <input id="family-front" class="remove" type="radio" name="family" value="Frontend">
-        <label class="remove" for="">Frontend</label>
-        <input id="family-back" class="remove" type="radio" name="family" value="Backend">
-        <label class="remove" for="">Backend</label>
-        <input id="family-full" class="remove" type="radio" name="family" value="FullStack">
-        <label class="remove" for="">FullStack</label>
+      <div id="family" >
+        <label id="label-family"  for="">Qual sua família?</label>
+        <input id="family-front"  type="radio" name="family" value="Frontend">
+        <label  for="">Frontend</label>
+        <input id="family-back"  type="radio" name="family" value="Backend">
+        <label  for="">Backend</label>
+        <input id="family-full"  type="radio" name="family" value="FullStack">
+        <label  for="">FullStack</label>
       </div>  
-      <div id="class" class="remove">
-        <label id="label-content" class="remove" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-        <input type="checkbox" class="subject remove" value="HoFs">HoFs        
-        <input type="checkbox" class="subject remove" value="Jest">Jest
-        <input type="checkbox" class="subject remove" value="Promises">Promises
-        <input type="checkbox" class="subject remove" value="React">React
-        <input type="checkbox" class="subject remove" value="SQL">SQL
-        <input type="checkbox" class="subject remove" value="Python"> Python       
+      <div id="class" >
+        <label id="label-content"  for="">Qual conteúdo você está com mais vontade de aprender?</label>
+        <input type="checkbox" class="subject" value="HoFs">HoFs        
+        <input type="checkbox" class="subject" value="Jest">Jest
+        <input type="checkbox" class="subject" value="Promises">Promises
+        <input type="checkbox" class="subject" value="React">React
+        <input type="checkbox" class="subject" value="SQL">SQL
+        <input type="checkbox" class="subject" value="Python"> Python       
       </div> 
-      <div class="remove">
-        <label id="label-rate" class="remove" for="">Como você avalia a Trybewarts?</label>
+      <div >
+        <label id="label-rate"  for="">Como você avalia a Trybewarts?</label>
         <div>
-        <input class="remove rate" type="radio" name="rate" value="1">
-        <label class="remove" for="">1</label>
-        <input class="remove rate" type="radio" name="rate" value="2">
-        <label class="remove" for="">2</label>
-        <input class="remove rate" type="radio" name="rate" value="3">
-        <label class="remove" for="">3</label>
-        <input class="remove rate" type="radio" name="rate" value="4">
-        <label class="remove" for="">4</label>
-        <input class="remove rate" type="radio" name="rate" value="5">
-        <label class="remove" for="">5</label>
-        <input class="remove rate" type="radio" name="rate" value="6">
-        <label class="remove" for="">6</label>
-        <input class="remove rate" type="radio" name="rate" value="7">
-        <label class="remove" for="">7</label>
-        <input class="remove rate" type="radio" name="rate" value="8">
-        <label class="remove" for="">8</label>
-        <input class="remove rate" type="radio" name="rate" value="9">
-        <label class="remove" for="">9</label>
-        <input class="remove rate" type="radio" name="rate" value="10">
-        <label class="remove" for="">10</label>   
+        <input class="rate" type="radio" name="rate" value="1">
+        <label  for="">1</label>
+        <input class="rate" type="radio" name="rate" value="2">
+        <label  for="">2</label>
+        <input class="rate" type="radio" name="rate" value="3">
+        <label  for="">3</label>
+        <input class="rate" type="radio" name="rate" value="4">
+        <label  for="">4</label>
+        <input class="rate" type="radio" name="rate" value="5">
+        <label  for="">5</label>
+        <input class="rate" type="radio" name="rate" value="6">
+        <label  for="">6</label>
+        <input class="rate" type="radio" name="rate" value="7">
+        <label  for="">7</label>
+        <input class="rate" type="radio" name="rate" value="8">
+        <label  for="">8</label>
+        <input class="rate" type="radio" name="rate" value="9">
+        <label  for="">9</label>
+        <input class="rate" type="radio" name="rate" value="10">
+        <label  for="">10</label>   
         </div>  
       </div> 
-      <div class="remove">
+      <div >
         <label class="textarea remove" for="">Deixe seu comentário:</label>        
-        <div class="remove">
-        <textarea name="" id="textarea" class="remove" maxlength="500"></textarea>
-        <label id="counter" class="remove" for="">500</label>
+        <div >
+        <textarea name="" id="textarea"  maxlength="500"></textarea>
+        <label id="counter"  for="">500</label>
         </div>
       </div>
-      <div class="remove">
-        <input type="checkbox" name="" id="agreement" class="remove" required>
-        <label for="agreement" id="label-infos" class="remove">Você concorda com o uso das informações acima?</label>
+      <div >
+        <input type="checkbox" name="" id="agreement"  required>
+        <label for="agreement" id="label-infos" >Você concorda com o uso das informações acima?</label>
       </div>
-      <button type="submit" id="submit-btn" class="remove" disabled>Enviar</button>
-
+      <button type="submit" id="submit-btn"  disabled>Enviar</button>
     </form>
+
+    <form id="form-data" action="">
+    </form>
+
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+
   </main>
+
   <footer>Direitos reservados à Trybewarts©</footer>
+
  <script src="script.js"></script> 
+
 </body>
 </html>
